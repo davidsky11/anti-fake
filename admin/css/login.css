@@ -1,0 +1,36 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family:"Microsoft YaHei", "Î¢ÈíÑÅºÚ", "ËÎÌå", STHeiti, MingLiu, Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+a {
+	color: #666;
+}
+a:hover {
+	color: #666;
+}
+a:active{
+	color: #666;
+}
+a:visited {
+	color: #666;
+}
+
+.lg { background: transparent url("../images/login_bg1.jpg") no-repeat scroll 0% 0%; min-height: 930px; height: 930px; width: 100%; }
+.lg .login_box { position: absolute; left: 165px; top: 80px; width: 370px; z-index: 999; }
+.lg .login_need { border: 1px solid rgb(230, 230, 230); border-radius: 0.4em; z-index: 999; position: relative; }
+.lg .login_need p { height: 55px; line-height: 55px; }
+.lg .login_need input { width: 295px; height: 55px; line-height: 55px; border: 0px none; background: transparent none repeat scroll 0% 0%; float: left; }
+.lg .login_need label { width: 68px; display: block; text-align: center; font-size: 14px; color: rgb(159, 159, 159); line-height: 55px; float: left; }
+.lg .login_choose { position: relative; z-index: 999; margin-top: 15px; }
+.lg .login_choose input { float: left; }
+.lg .login_choose label { color: rgb(156, 156, 156); font-size: 14px; }
+.lg .login_choose a { float: right; }
+.lg .login_btn_a { background-color: rgb(239, 20, 20); color: rgb(255, 255, 255); border: 1px solid rgb(199, 0, 0); border-radius: 0.4em; cursor: pointer; display: block; font-size: 20px; height: 50px; line-height: 50px; text-align: center; text-decoration: none; width: 370px; }
+*::-moz-placeholder { color: rgb(187, 187, 187); font-family: Î¢ÈíÑÅºÚ; font-size: 14px; }
+
+.yzm{
+	float: left;
+	margin-top: 10px;
+}

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>VS-Chinese herbal medicine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='themes/default/css/fonts-googleapis.css'>
+        <link rel="stylesheet" href="themes/default/css/reset.css">
+        <link rel="stylesheet" href="themes/default/css/supersized.css">
+        <link rel="stylesheet" href="themes/default/css/style.css">
+		<!-- link rel="stylesheet" href="themes/default/css/style1.css" -->
+
+		<SCRIPT type="text/javascript" src="data/js/ajax.js"></SCRIPT>
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+		<div class="page-container">
+		<div class="main">
+		<!--搜索开始 -->
+		<div class="sbox">
+		<div id="tgs_result_str">
+			<h1> VS-Chinese herbal medicine </h1>
+
+			<input name="bianhao" id="bianhao" class="input-text" type="text" placeholder="请依次输入您要查询的防伪码">
+
+			<?php  if($cf['yzm_status']==1){ ?>
+				 <div class="form-section form-captcha clearfix">
+					 <input type="text" class="input-yzm" id='yzm' name="yzm"  placeholder="请输入验证码">
+                     <!-- div class="yzm" --> 
+						<img class="code" src="data/code.php" alt="验证码" title="点击刷新" class="code" onClick="window.location.reload()"/>&nbsp;
+					<!-- /div --> 
+				</div>
+			<?php }?>					  
+						  
+            <div class="form-section">
+				<button type="submit" class="btn btn-primary" onClick="return GetQuery();">点击查询</button>   
+			</div>
+
+			<INPUT value='' type='hidden' name='search' id='search'>
+            <INPUT value="<?php echo $cf['yzm_status'] ?>" type="hidden" name="yzm_status" id="yzm_status">
+            
+		</div>
+		</div>
+		</div>
+        </div>
+        <div class="foot">
+			官方唯一查询网站 www.vs-china.org其他网站所售一律非本产品。认证正品，抵制假冒。
+		</div>
+
+        <!-- Javascript -->
+        <script src="themes/default/js/jquery-1.8.2.min.js"></script>
+        <script src="themes/default/js/supersized.3.2.7.min.js"></script>
+        <script src="themes/default/js/supersized-init.js"></script>
+        <script src="themes/default/js/scripts.js"></script>
+		
+    </body>
+
+</html>
+

@@ -1,0 +1,346 @@
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	text-shadow: 0 1px 4px rgba(0,0,0,.2);
+	line-height: 2;
+}
+
+.main_con{margin-bottom:5px;}
+.main_image{overflow:hidden; margin:0 auto; position:relative;}
+.info{
+   border-radius:10px; overflow:hidden;
+  padding: 25px;
+  background-color: rgba(0,0,0,0.3);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+}
+.info p{
+  color: #FFFFFF;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+  .info{
+    background-color:#000000;
+    filter:Alpha(opacity=30);
+    position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+  }
+  .info p{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+  }  
+}
+.i_box{
+	position:relative;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.tgyz{
+	ine-height:32px;
+	font-size:18px;
+	color:#FFFFFF;
+	word-wrap:break-word;
+	word-break:break-all;
+	background-attachment: fixed;
+	background-image: url(../images/sign05.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.address h4{
+	font-size:12px;
+	color:#FFCC00;
+	line-height:2.5;
+	font-weight: normal;
+}
+.address ul{
+	padding-top: 20px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.address li{line-height:1.5; overflow:hidden; font-size:12px; color:#888; padding:0 4px; -webkit-text-size-adjust:none; text-align:justify;}
+.address li:last-child{border:none;}
+.address li span{float:right;}
+.foot{
+	width: 350px;
+	margin: 50px auto 0 auto;
+	font-size: 12px;
+	text-shadow: 0 1px 3px rgba(0,0,0,.2);
+	line-height: 1.5;
+	text-align: left;
+	color: #E0E0E0;
+}
+.foot a{
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: lighter;
+	color: #FFFFFF;
+}
+
+.clearfix:before,
+
+.clearfix:after {
+
+  display: table;
+
+  content: "";
+
+  line-height: 0;
+
+}
+
+.clearfix:after {
+
+  clear: both;
+
+}
+
+.fl {
+
+  float: left;
+
+}
+
+.fr {
+
+  float: right;
+
+}
+
+/*具体内容*/
+
+body {
+
+  font:normal 100%/1.5em "微软雅黑",Arial;
+
+  color:#333;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+.cursor {
+
+  cursor: pointer;
+
+}
+
+/*=固定宽度容器=*/
+
+.container {
+
+  width: 100%;
+
+  margin: 0 auto;
+
+  /* 侧边的自动值与宽度结合使用，可以将布局居中对齐 */
+
+
+
+}
+
+.content {
+
+  margin: 0 auto;
+
+  max-width:1024px;
+
+}
+
+
+
+/*=公用=*/
+
+[class^="iconb_"], [class*=" iconb_"]{background-repeat:no-repeat; display:inline-block; vertical-align:middle; margin-top:-2px;}
+
+.iconb_20arrow_r{background-image:url(../images/sign04.png); width:20px; height:20px;}
+
+.iconb_30phone{background-image:url(../images/sign05.png); width:30px; height:30px; background-position:0 2px;}
+
+
+
+/*=附近门店=*/
+
+.p20{ padding:10px;}
+
+.addrbox{ overflow:hidden; padding-top:1px;}
+
+
+
+.addrbox ul li{ height:50px;  border:#dddddd solid 1px; margin-top:-1px; font:normal 18px/48px '微软雅黑'; padding:0 10px; cursor:pointer;}
+
+.addrbox ul li:first-child{ border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0;}
+
+.addrbox ul li:last-child{ border-radius:0 0 4px 4px; -webkit-border-radius:0 0 4px 4px;}
+
+.addrbox ul li.active{ border:#fabe00 solid 1px; position:relative; z-index:1; color:#fabe00}
+
+.addrbox ul li span{ float:right; margin-top:13px;}
+
+.addrboxlist{ width:120px; height:100%; position:fixed; top:0; right:-160px; background-color:rgba(33,41,44,0.95);  overflow-x:hidden; overflow-y:auto; z-index:5; 
+
+transition: all 0.3s ease-in-out;
+
+-moz-transition: all 0.3s ease-in-out;
+
+-o-transition: all 0.3s ease-in-out;
+
+-webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.addrboxlist ul{ display:none;}
+
+.addrboxlist ul li{border-bottom:1px solid rgba(33,33,33,0.95); height:50px; font:normal 18px/50px '微软雅黑'; color:#aeaeae; padding-left:20px;}
+
+
+
+.listmanger{ width:auto; padding:10px;}
+
+.listmanger a{ displa:block; height:46px; font: normal 18px/44px '微软雅黑'; border:#481c87 solid 2px; float:left; width:50%; background-color:#fff; text-align:center; text-decoration:none;}
+
+.listmanger a.active{ background-color:#481c87; color:#fff;}
+
+
+
+.listbox{ width:auto; background-color:#fcfcfc;}
+
+.listbox dl{ border-top:#ddd solid 1px; border-bottom:#ddd solid 1px; padding:10px 20px 10px 10px; background-image:url(../images/sign04.png); background-repeat:no-repeat; background-position:98% center; margin-top:-1px;}
+
+.listbox dl dt{ font-size:18px; color:#fabe00;}
+
+.listbox dl dd{ font-size:16px; padding-left:1em; line-height:1.2em;}
+
+.listbox dl.gap{ background-color:#fafafa;}
+
+
+
+/*=防伪查询=*/
+
+.Security{ background:url(../images/backbg1.png) repeat #481c87;}
+
+
+
+.catemanager{ width:100%; }
+
+.catemanager a{ displa:block; height:54px; font: normal 18px/52px '微软雅黑'; border:#4e228d solid 2px; float:left; width:50%; background-color:#fff; text-align:center; text-decoration:none;}
+
+.catemanager a.active{ background-color:#4e228d; color:#fff;}
+
+.catecom{ margin-top:10%; padding:10px;}
+
+.catecom .imgbox{ text-align:center;}
+
+.Query_fail{ text-align:center; padding:20px;}
+
+.Query_fail .imgbox{ margin-top:10%; text-align:center; }
+
+.Query_fail .txtbox{ font-size:18px; margin-top:10px;}
+
+.Query_fail .btnbox{ margin-top:8%;}
+
+.Query_succ{ text-align:center; padding:20px;}
+
+.Query_succ .imgbox{ margin-top:20%;}
+
+.Query_succ .txtbox{ font-size:18px; margin-top:20px;}
+
+.selectbox select{
+
+width: 100%;
+
+height: 46px;
+
+line-height:26px;
+
+padding: 10px;
+
+margin-bottom: 10px;
+
+background: #fff;
+
+border: 1px solid #ddd;
+
+border-radius:0px;
+
+font-size: 14px;
+
+font-weight: normal;
+
+-webkit-appearance: none;
+
+box-sizing: border-box;
+
+}
+
+
+
+/*=举报=*/
+
+.report_com{ position:relative; margin-top:0px;}
+
+.report_com ul{ position:absolute; width:100%; top:10px; left:0; padding:0 10px;}
+
+.report_com ul li{ margin-top:10px; height:54px; overflow:hidden;}
+
+
+
+@media (max-width: 480px) {
+
+.catecom .imgbox img{ max-width:60%; -ms-interpolation-mode:bicubic;}
+
+.Query_fail .imgbox img{ max-width:70%; -ms-interpolation-mode:bicubic;}
+
+.Query_succ .imgbox{ margin-top:30%;}
+
+.Query_succ .imgbox img{ max-width:70%;}
+
+
+
+.listbox dl dt{ color:#fabe00;}
+
+.Query_fail .txtbox{ margin-top:10px;}
+
+.Query_succ .txtbox{ margin-top:20px;}
+
+}
+
+
+
+/*ajax效果*/
+
+.t-c{
+
+    text-align: center;
+
+}
+
+.AjaxModal{
+
+    width: 100%;
+
+    /*height: 100px;*/
+
+    background-color: rgba(51,51,51,0.2);
+
+    position: fixed;
+
+    top: 0;
+
+    z-index: 10002;
+
+}
+
+.loadGif{
+
+    margin: 0 auto;
+
+    height: 40px;
+
+    width: 40px;
+
+    background: url('../images/loading.gif') center no-repeat;
+
+}

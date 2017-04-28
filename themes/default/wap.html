@@ -1,0 +1,82 @@
+<!doctype html>
+<script type="text/javascript">
+<!--
+	var ctx = "";
+//-->
+</script>
+<html>
+	<head>
+	     <title><?php echo $cf['site_name']?></title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="<?php echo $cf['page_keywords']?>" />
+      <meta name="description" content="<?php echo $cf['page_desc']?>" />
+	    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />
+	    <meta property="wb:webmaster" content="ad4bded55c6a7395" />
+	    <link media="all" type="text/css" href="themes/default/css/wapstyle.css" rel="stylesheet" />
+		<link rel="stylesheet" href="admin/font-awesome/css/font-awesome.min.css">
+		 <SCRIPT type="text/javascript" src="data/js/wapajax.js"></SCRIPT>
+	    
+	</head>
+	
+	<body>
+		<div class="nav-banner pr">
+		    <div class="nav-back"><a href="javascript:history.go(-1)"> <i class="fa fa-angle-left fa-lg"></i> </a></div>
+		    <div class="nav-invitation"> 防伪查询移动端</div>
+		</div>
+		
+		<!-- 搜索结果AJAX提示显示区，最后一行结束，用于显示时，挡掉搜索内容区-->
+		<div class="ajaxbox">
+		<div id="tgs_result_str">
+		 <div class="sbox">
+		 
+		 
+		 <!--logo区 -->
+		<div class="login-news">
+		    <div class="title2_n1"><span class="logo_title">感谢您使用我们的产品</span><br><span class="logo_title2">快速查询识别产品真伪，保障您的权益</span></div>
+			<!--end -->
+			
+			<!--搜索内容区 -->
+		    <div class="loginbox">
+		        
+		                <!--输入防伪码框 -->
+		        		<div class="logininputs mb">
+			                <p class="cl newal">
+						     <input name="bianhao" id="bianhao"  type="text" class="input-text" placeholder="请依次输入您要查询的防伪码">
+						    </p>
+			            </div>
+						<!--end -->
+						
+						<!--验证码框 -->
+			            <?php if($cf['yzm_status']==1){?>
+			           	<div class="cl Verification_new">
+			                <input  type="yzm"  id='yzm' name="yzm"  maxlength="4" size="4"  class="input-yzm fl" placeholder="请输入验证码">
+			                <span class="yz fl"><img src="data/code.php" alt="验证码" title="点击刷新" class="code" onClick="window.location.reload()"/></span>
+			            </div>
+		                <?php }?>
+						<!--end -->
+		                
+			            <!--提交开始 -->
+			            <div class="sub">
+			              <button type="submit" class="btn" onClick="return GetQuery();">点击查询</button>
+						  <INPUT value='' type='hidden' name='search' id='search'>
+                   <INPUT value="<?=$cf['yzm_status']?>" type="hidden" name="yzm_status" id="yzm_status">
+			            </div>
+						<!--end -->
+						
+						<!--查询提示已备注掉，可随时开启 -->
+			           <!-- <div class="cxts"> <?php echo $result_str;?></div> -->
+					  <!--end -->
+		      
+		    </div>
+	    <!--搜索区END --> 
+		
+		</div>
+		</div>
+		</div>
+		<!--搜索结果显示AJAX end -->
+
+</div>
+		<div class="cl footer">beta</div>
+	</body>
+</html>
+
